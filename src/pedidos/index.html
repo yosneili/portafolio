@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto de Tres Fases</title>
+    <link rel="stylesheet" href="diseño.css">
+</head>
+<body>
+    <div class="container">
+        <div class="phase" id="phase1">
+            <h2>Pedido ingresado</h2>
+            <p>Tu pedido a sido ingresado con exito</p>
+        </div>
+        <div class="phase" id="phase2">
+            <h2>Pedido en preparacion</h2>
+            <p>Tu pedido se encuentra en preparacion</p>
+        </div>
+        <div class="phase" id="phase3">
+            <h2>Pedido Listo</h2>
+            <p>Tu pedido esta listo para ser retirado</p>
+        </div>
+    </div>
+
+    <div class="input-section">
+        <input type="text" id="valorInput" placeholder="Ingresa un valor">
+        <button id="enviarBtn">Enviar</button>
+        <p id="resultado"></p>
+    </div>
+
+    <div class="nuevo-boton">
+        <input type="new" id="valorNuevo" placeholder="Ingresa un nuevo valor">
+        <button id="nuevoBtn">Enviar</button>
+        <p id="resultadonuevo"></p> 
+    </div>
+
+    <div id="mensajeFinal" class="mensaje-final"></div>
+
+    <!-- Añadir elementos de audio -->
+    <audio id="sound1" src="sounds/SD_ALERT_3.mp3"></audio>
+    <audio id="sound2" src="sounds/SD_ALERT_3.mp3"></audio>
+    <audio id="sound3" src="sounds/SD_ALERT_33.mp3"></audio>
+
+    <script src="codigo.js"></script>
+</body>
+</html>
+
+
